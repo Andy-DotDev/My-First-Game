@@ -14,11 +14,19 @@ offset_bottom = 230.0
 theme_override_font_sizes/font_size = 50
 text = "Play"
 
+[node name="Level" type="Button" parent="."]
+offset_left = 376.0
+offset_top = 305.0
+offset_right = 776.0
+offset_bottom = 385.0
+theme_override_font_sizes/font_size = 50
+text = "Level"
+
 [node name="Quit" type="Button" parent="."]
 offset_left = 376.0
-offset_top = 300.0
+offset_top = 453.0
 offset_right = 776.0
-offset_bottom = 380.0
+offset_bottom = 533.0
 theme_override_font_sizes/font_size = 50
 text = "Quit
 "
@@ -26,4 +34,5 @@ text = "Quit
 [node name="ParallaxBackground" parent="." instance=ExtResource("2_8rfp6")]
 
 [connection signal="pressed" from="Play" to="." method="_on_play_pressed"]
+[connection signal="pressed" from="Level" to="." method="_on_level_pressed"]
 [connection signal="pressed" from="Quit" to="." method="_on_quit_pressed"]
